@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AutoModule } from './auto/auto.module';
 import { DbModule } from './db/db.module';
+import { RentalModule } from './rental/rental.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { DbModule } from './db/db.module';
     }),
     AutoModule,
     DbModule,
+    RentalModule,
   ],
   controllers: [AppController],
   providers: [AppService],
